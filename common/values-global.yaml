@@ -7,8 +7,8 @@ global:
   git:
     hostname: github.com
     # Account is the user or organization under which the pattern repos lives 
-    account: hybrid-cloud-patterns
-    email: someone@somewhere.com
+    account: jianrzha
+    email: jianrzha@redhat.com
     dev_revision: main
 
 main:
