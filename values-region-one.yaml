@@ -9,10 +9,10 @@ clusterGroup:
   isHubCluster: false
 
   namespaces:
-    - openshift-dbaas-operator
+    - redhat-dbaas-operator
 
   projects:
-    - openshift-dbaas-operator
+    - redhat-dbaas-operator
 
   subscriptions:
     - name: dbaas-operator
