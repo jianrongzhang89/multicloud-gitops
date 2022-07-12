@@ -14,6 +14,13 @@ clusterGroup:
       namespace: open-cluster-management
       channel: release-2.5
       csv: advanced-cluster-management.v2.5.0
+    dbaas:
+      name: dbaas-operator
+      namespace: openshift-operators
+      channel: alpha
+      source: dbaas-operator
+      sourceNamespace: openshift-marketplace
+      csv: dbaas-operator.v0.1.5-dev
 
   projects:
   - hub

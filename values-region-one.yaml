@@ -16,7 +16,7 @@ clusterGroup:
 
   subscriptions:
     - name: dbaas-operator
-      namespace: openshift-dbaas-operator
+      namespace: openshift-operators
       channel: alpha
       source: dbaas-operator
       sourceNamespace: openshift-marketplace
