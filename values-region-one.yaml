@@ -9,20 +9,18 @@ clusterGroup:
   isHubCluster: false
 
   namespaces:
-    - config-demo
-
-  subscriptions:
+    - openshift-dbaas-operator
 
   projects:
-    - config-demo
+    - openshift-dbaas-operator
 
-  applications:
-    config-demo:
-      name: config-demo
-      namespace: config-demo
-      project: config-demo
-      path: charts/all/config-demo
-
+  subscriptions:
+    - name: dbaas-operator
+      namespace: openshift-dbaas-operator
+      channel: alpha
+      source: dbaas-operator
+      sourceNamespace: openshift-marketplace
+      csv: dbaas-operator.v0.1.5-dev
 
   imperative:
     # NOTE: We *must* use lists and not hashes. As hashes lose ordering once parsed by helm
