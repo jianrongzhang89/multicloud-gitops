@@ -25,6 +25,7 @@ clusterGroup:
   projects:
   - hub
   - config-demo
+  - dbaas
 
   applications:
     acm:
@@ -76,6 +77,12 @@ clusterGroup:
       namespace: config-demo
       project: config-demo
       path: charts/all/config-demo
+
+    dbaas-catalog:
+      name: dbaas-catalog
+      namespace: openshift-marketplace
+      project: dbaas
+      path: charts/all/dbaas-catalog
 
   imperative:
     # NOTE: We *must* use lists and not hashes. As hashes lose ordering once parsed by helm

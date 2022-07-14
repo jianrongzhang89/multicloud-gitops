@@ -1,0 +1,8 @@
+kind: CatalogSource
+metadata:
+  name: dbaas-operator
+  namespace: openshift-marketplace
+spec:
+  displayName: DBaaS Operator
+  image: quay.io/jianrzha/dbaas-operator-catalog:v0.1.5-dev
+  sourceType: grpc

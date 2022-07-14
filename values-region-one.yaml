@@ -12,7 +12,7 @@ clusterGroup:
     - redhat-dbaas-operator
 
   projects:
-    - redhat-dbaas-operator
+    - dbaas
 
   subscriptions:
     - name: dbaas-operator
@@ -21,6 +21,13 @@ clusterGroup:
       source: dbaas-operator
       sourceNamespace: openshift-marketplace
       csv: dbaas-operator.v0.1.5-dev
+
+  applications:
+    dbaas-catalog:
+      name: dbaas-catalog
+      namespace: openshift-marketplace
+      project: dbaas
+      path: charts/all/dbaas-catalog
 
   imperative:
     # NOTE: We *must* use lists and not hashes. As hashes lose ordering once parsed by helm
